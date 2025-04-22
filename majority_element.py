@@ -5,16 +5,20 @@
 class Solution:
     def majorityElement(self,nums:List[int]) -> int:
 
-#### hashing 
+#### hashing   TC : O(N)  SC : O(N)
         nums_dict = {}
         for num in nums:
             nums_dict[num] = nums_dict.get(num,0) + 1 
+            if nums_dict[num] > len(nums)//2:
+                return num
 
-        for key ,value in nums_dict.items():
-            if value > len(nums)/2:
-                return key 
-
-#### moore's voting algorithm 
+#### moore's voting algorithm TC : O(N)    SC : O(1)
+# We vote for a candidate.
+# If someone agrees → +1.
+# If someone disagrees → -1.
+# If votes become zero, we choose a new candidate.
+# Even if you "cancel" one majority vote with one minority vote,
+# Majority will survive at the end!
 
         count = 0
         candidate = None
