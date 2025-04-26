@@ -6,6 +6,9 @@ class Solution():
 
 #kadane's approach :
 
+# Kadane's idea is used anywhere you have a continuous thing (sum, product, score) and 
+# you want the "best streak" or "best continuous segment"!
+
         current_sum = 0
         max_sum = float('-inf')
 
@@ -19,7 +22,7 @@ class Solution():
 
             max_sum = max(max_sum,current_sum)
             # the best (largest) subarray sum seen anywhere up to now.
-            
+
         return max_sum 
 
 
