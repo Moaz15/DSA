@@ -1,0 +1,9 @@
+Recursion is a method where a function calls itself to solve a smaller instance of the same problem.
+
+Components of Recursion
+1.Base Case
+Stops the recursion from continuing forever. It defines when to stop.
+
+2.Recursive Case
+The part where the function calls itself with a smaller input.
+
