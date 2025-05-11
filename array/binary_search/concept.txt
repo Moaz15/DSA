@@ -1,0 +1,16 @@
+Binary Search is an efficient algorithm to find the position of a target element in a sorted 1D array. 
+It works by repeatedly dividing the search interval in half.
+
+Prerequisites :
+
+The array must be sorted (either ascending or descending).
+Time Complexity: O(log n).
+
+Binary search is only applicable in a sorted search space. 
+The sorted search space does not necessarily have to be a sorted array. 
+It can be anything but the search space must be sorted.
+
+Lower Bound 
+The lower bound of a value x in a sorted array is:
+The index of the first element that is not less than x
+
