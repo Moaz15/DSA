@@ -14,3 +14,18 @@ Lower Bound
 The lower bound of a value x in a sorted array is:
 The index of the first element that is not less than x
 
+
+
+Philosophy of "Search in Rotated Sorted Array"
+✅ Goal: Find a target in a rotated sorted array in O(log n) time.
+🔁 Key Property: In any binary search window, at least one half is always sorted.
+🧭 Strategy:
+Find the mid index.
+Check which half (left or right) is sorted.
+Decide whether the target lies within the sorted half.
+If yes → search that half.
+If no → search the other half.
+🔍 Rotation only introduces one pivot, so normal binary search still works with slight tweaks.
+🚫 Don't assume global sorted order — only trust the sorted half at each step.
+🧠 Binary search is guided by logic, not brute force — keep halving the search space smartly.
+⏱️ Time Complexity: Always O(log n) — just like regular binary search.
