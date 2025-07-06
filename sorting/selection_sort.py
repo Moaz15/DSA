@@ -9,3 +9,9 @@ class Solution:
             nums[i],nums[min_index] = nums[min_index],nums[i]
         return nums
 
+
+
+
+
+
+
