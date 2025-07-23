@@ -6,7 +6,7 @@
 # The other pointer (num in the loop) iterates over each element in the array.
 # This avoids unnecessary shifting and keeps the relative order of non-zero elements.
 
-
+from typing import List
 class Solution : 
     def moveZeroes(self, nums: List[int])-> List:
 
@@ -26,13 +26,19 @@ class Solution :
 
         # one pass solution 
 
-        insert_position = 0
-        for current in range(len(nums)):
-            if nums[current] != 0:
-                nums[insert_position], nums[current] = nums[current],nums[insert_position]
-                insert_position  +=1 
+        # insert_position = 0
+        # for current in range(len(nums)):
+        #     if nums[current] != 0:
+        #         nums[insert_position], nums[current] = nums[current],nums[insert_position]
+        #         insert_position  +=1 
 
-        return nums
+        # return nums
+
+
+
+            
+
+
                 
             
 

@@ -1,3 +1,4 @@
+
 class Solution():
     def secondLargestElement(self, nums:list[int])->int:
         if len(nums) < 2:
@@ -10,8 +11,18 @@ class Solution():
             elif num > second_largest_element and num != largest_element :
                 second_largest_element = num
         if second_largest_element == float('-inf'):
-            return -1 
+            return -1
         return second_largest_element
+    
+
+    
+    
+
+
+        
+    
+
+
 
 
 
